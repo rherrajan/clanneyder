@@ -13,16 +13,29 @@ generate the html
 ```bash
 	npm start
 ```
+promote coming changes via grunt
+```bash
+	grunt watch
+```
 show the html
 ```bash
-	http-server dist
+	http-server dist .
 ```
 
 view in http://localhost:8080
 
 
+
+
 Build the dynamic backend
 -------------------------
+
+
+```bash
+	mvn install; heroku local
+```
+
+view http://localhost:5000/systeminfo
 
 WIP
 -------------------------
