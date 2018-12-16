@@ -10,6 +10,7 @@ function checkStatus(){
 				statusElement.title = xhttp.responseText;
 			} else {
 				statusElement.classList.add("led-red");
+				statusElement.title = "could not conect to backend via url: " + statusURL;
 			}
 			statusElement.classList.remove("led-blue");
 		};
@@ -17,5 +18,4 @@ function checkStatus(){
 
 	xhttp.open("GET", statusURL, true);
 	xhttp.send();
-
 }
