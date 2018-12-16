@@ -19,7 +19,7 @@ promote coming changes via grunt
 ```
 show the html
 ```bash
-	http-server dist .
+	http-server ./dist
 ```
 
 view http://localhost:8080
