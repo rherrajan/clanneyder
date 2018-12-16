@@ -1,4 +1,4 @@
-# clanneyder
+# Clanneyder
 Webapp with static and dynamic tiers (SpringMVC, Grunt watch, Metalsmith, Heroku, Netlify) Quickstart Maven Archetype
 
 
@@ -25,8 +25,8 @@ Create a new empty directory for your project and navigate into it and then run:
         -DarchetypeVersion=1.0.0 \
         -DgroupId=my.groupid \
         -DartifactId=myartifactid \
-        -Dversion=my-version \
-        -Ddescription=my-description
+        -Ddescription="my description of the app" \
+        -Dversion=0.0.1-SNAPSHOT
 ```
 
 Read the README.md in your new project
