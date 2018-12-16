@@ -70,9 +70,17 @@ Open your deployed app
 Deploy the static frontend
 -------------------------
 
-npm install netlify-cli -g
+create a new netlify app
+https://app.netlify.com/start
 
+connect to your github repo
 
+deploy your site
+
+open "domain settings"-> "Custom Domains" -> "edit site name"
+change the generated site name to "${artifactId}"
+
+open https://${artifactId}.netlify.com/
 
 WIP
 -------------------------
