@@ -24,7 +24,7 @@ Create a new empty directory for your project and navigate into it and then run:
         -DarchetypeArtifactId=clanneyder \
         -DarchetypeVersion=1.0.0 \
         -DgroupId=my.groupid \
-        -DartifactId=my-artifactId \
+        -DartifactId=myartifactid \
         -Dversion=my-version \
         -Ddescription=my-description
 ```
