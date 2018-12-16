@@ -57,7 +57,7 @@ module.exports = function(grunt) {
 				},
 				watch : {
 					scripts : {
-						files : [ 'src/**/*.hbs', 'src/**/*.css', 'src/**/*.js' ],
+						files : [ 'src/**/*.hbs', 'src/**/*.css', 'src/**/*.js','src/**/*.md' ],
 						tasks : [
 							'metalsmith',
 							'copy'
