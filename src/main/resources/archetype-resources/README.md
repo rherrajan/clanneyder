@@ -52,13 +52,15 @@ create a github repository (without readme)
 push to the new repo
 ```bash
 	git init
-	git commit -am "initial commit"
+	git add -A
+	git commit -m "initial commit"
 	git remote add origin https://github.com/<your user name>/${artifactId}.git
     git push -u origin master
 ```
 
 create heroku app
 ```bash
+	cd backend
 	heroku create ${artifactId}
 ```
 
