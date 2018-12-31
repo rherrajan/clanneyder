@@ -8,19 +8,25 @@ ${description}
 
 Build the static frontend
 -------------------------
+```bash
+	cd frontend
+```
 
 generate the html
 ```bash
 	npm start
 ```
-promote coming changes via grunt
-```bash
-	grunt watch
-```
+
 show the html
 ```bash
 	http-server ./dist
 ```
+
+optional: promote coming changes via grunt
+```bash
+	grunt watch
+```
+
 
 view http://localhost:8080
 
@@ -28,6 +34,9 @@ view http://localhost:8080
 Build the dynamic backend
 -------------------------
 
+```bash
+	cd backend
+```
 ```bash
 	mvn install; heroku local
 ```
