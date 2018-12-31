@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 			.initConfig({
 				metalsmith : {
 					main : {
-						src : 'src/main/metalsmith/markdown',
+						src : 'metalsmith/markdown',
 						dest : 'dist',
 						options : {
 							metadata : {
@@ -36,8 +36,8 @@ module.exports = function(grunt) {
 								'metalsmith-layouts' : {
 									engine : 'handlebars',
 									default : 'default.hbs',
-									directory : 'src/main/metalsmith/layouts',
-									partials : 'src/main/metalsmith/layouts/partials'
+									directory : 'metalsmith/layouts',
+									partials : 'metalsmith/layouts/partials'
 								},		
 								'metalsmith-templates' : {
 									engine : 'handlebars'
@@ -50,14 +50,14 @@ module.exports = function(grunt) {
 					main: {
 					    files: [
 					      // includes files within path and its sub-directories
-					      {expand: true, cwd: 'src/main/metalsmith/', src: ['assets/**'], dest: 'dist/'},
-					      {expand: true, cwd: 'src/main/metalsmith/public/', src: ['*'], dest: 'dist/'},	
+					      {expand: true, cwd: 'metalsmith/', src: ['assets/**'], dest: 'dist/'},
+					      {expand: true, cwd: 'metalsmith/public/', src: ['*'], dest: 'dist/'},	
 					    ],
 					},
 				},
 				watch : {
 					scripts : {
-						files : [ 'src/**/*.hbs', 'src/**/*.css', 'src/**/*.js','src/**/*.md' ],
+						files : [ 'metalsmith/**/*.hbs', 'metalsmith/**/*.css', 'metalsmith/**/*.js','metalsmith/**/*.md' ],
 						tasks : [
 							'metalsmith',
 							'copy'

@@ -1,1 +1,1 @@
-web: java -jar -Dserver.port=$PORT target/${artifactId}-${version}.jar
+web: java -jar -Dserver.port=$PORT target/${artifactId}-backend-${version}.jar

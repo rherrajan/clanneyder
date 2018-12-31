@@ -21,37 +21,49 @@
 				<exclude>.classpath</exclude>
 			</excludes>
 		</fileSet>
+		<fileSet filtered="true" >
+			<directory></directory>
+			<includes>
+				<include>backend/*</include>
+			</includes>
+		</fileSet>
+			<fileSet filtered="true" >
+			<directory></directory>
+			<includes>
+				<include>frontend/*</include>
+			</includes>
+		</fileSet>
 		<fileSet filtered="true" packaged="true">
-			 <directory>src/main/java</directory>
+			 <directory>backend/src/main/java</directory>
 			 <includes>
 			 	<include>**/*.java</include>
 			 </includes>
 		</fileSet>
 		<fileSet filtered="true">
-			 <directory>src/main/resources</directory>
+			 <directory>backend/src/main/resources</directory>
+		</fileSet>
+		<fileSet filtered="true" packaged="true">
+			 <directory>backend/src/test/java</directory>
+			 <includes>
+			 	<include>**/*.java</include>
+			 </includes>
+		</fileSet>
+		<fileSet filtered="true">
+			 <directory>backend/src/test/resources</directory>
 		</fileSet>
 		<fileSet filtered="true" encoding="UTF-8">
-			 <directory>src/main/metalsmith</directory>
+			 <directory>frontend/metalsmith</directory>
 			 <includes>
 				<include>assets/css/*</include>
 				<include>public/*</include>
 			</includes>
 		</fileSet>
 		<fileSet filtered="false" encoding="UTF-8">
-			 <directory>src/main/metalsmith</directory>
+			 <directory>frontend/metalsmith</directory>
 			 <excludes>
 				<exclude>assets/css/*</exclude>
 				<exclude>public/*</exclude>
 			</excludes>
-		</fileSet>
-		<fileSet filtered="true" packaged="true">
-			 <directory>src/test/java</directory>
-			 <includes>
-			 	<include>**/*.java</include>
-			 </includes>
-		</fileSet>
-		<fileSet filtered="true">
-			 <directory>src/test/resources</directory>
 		</fileSet>
 	</fileSets>
 </archetype-descriptor>

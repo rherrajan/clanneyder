@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "npm install",
     "start": "node . && npm run copy-assets",
-    "copy-assets": "cp -r src/main/metalsmith/assets dist/ && cp src/main/metalsmith/public/manifest.json dist/ && cp src/main/metalsmith/public/service-worker.js dist/"
+    "copy-assets": "cp -r metalsmith/assets dist/ && cp metalsmith/public/manifest.json dist/ && cp metalsmith/public/service-worker.js dist/"
   },
   "dependencies": {
     "autoprefixer": "^7.1.1",

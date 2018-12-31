@@ -20,7 +20,7 @@ Handlebars.registerHelper('date', function (date) {
 });
 
 metalsmith(__dirname)
-    .source('src/main/metalsmith/markdown')
+    .source('metalsmith/markdown')
     .destination('./dist')
     .clean(true)
     .use(drafts())
@@ -34,9 +34,9 @@ metalsmith(__dirname)
     .use(permalinks())
     .use(layouts({
         engine: 'handlebars',
-        directory: 'src/main/metalsmith/layouts',
+        directory: 'metalsmith/layouts',
         default: 'default.hbs',
-        partials: 'src/main/metalsmith/layouts/partials'
+        partials: 'metalsmith/layouts/partials'
     }))
     .build(function (err) {
         if (err) throw err;

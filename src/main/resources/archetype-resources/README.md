@@ -19,7 +19,7 @@ generate the html
 
 show the html
 ```bash
-	http-server ./dist
+	http-server ./dist &
 ```
 
 optional: promote coming changes via grunt
