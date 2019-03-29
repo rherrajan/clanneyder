@@ -20,7 +20,11 @@ nvm use 5.0
 npm install -g grunt-cli
 npm install grunt-metalsmith --save-dev
 npm install grunt-contrib-watch --save-dev
-npm install -g http-server 
+npm install -g http-server
+
+sudo apt install -y snapd 
+export PATH=/snap/bin:$PATH
+sudo snap install --classic heroku
 ```
 
 Commit the generated files
