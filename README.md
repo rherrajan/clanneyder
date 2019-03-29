@@ -32,8 +32,4 @@ To create your new project run:
 
 Read the README.md in your new project
 --------------------------------------
-
-
-
-TODO:
-* movile css adjustments
+Especially the Prerequisites ;)

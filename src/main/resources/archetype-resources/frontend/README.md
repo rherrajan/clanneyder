@@ -13,16 +13,19 @@ Build the static frontend
 ```
 
 generate the html
+
 ```bash
 	npm start
 ```
 
 show the html
+
 ```bash
 	http-server ./dist &
 ```
 
 optional: promote coming changes via grunt
+
 ```bash
 	grunt watch
 ```
