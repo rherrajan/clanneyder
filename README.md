@@ -16,17 +16,18 @@ To install the archetype in your local repository execute the following commands
 Create a project from a local repository
 ----------------------------------------
 
-Create a new empty directory for your project and navigate into it and then run:
+To create your new project run:
 
 ```bash
     mvn archetype:generate -B \
-        -DarchetypeGroupId=tk.icudi \
-        -DarchetypeArtifactId=clanneyder \
-        -DarchetypeVersion=1.0.0 \
         -DgroupId=my.groupid \
         -DartifactId=myartifactid \
         -Ddescription="my description of the app" \
-        -Dversion=0.0.1-SNAPSHOT
+        -Dversion=0.0.1-SNAPSHOT \
+        -DarchetypeGroupId=tk.icudi \
+        -DarchetypeArtifactId=clanneyder \
+        -DarchetypeVersion=1.0.0
+
 ```
 
 Read the README.md in your new project
@@ -35,6 +36,4 @@ Read the README.md in your new project
 
 
 TODO:
-
-* make multi maven module? dist and "node_modules" are not good in eclipse
 * movile css adjustments
