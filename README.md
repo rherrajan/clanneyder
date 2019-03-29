@@ -33,3 +33,8 @@ Read the README.md in your new project
 --------------------------------------
 
 
+
+TODO:
+
+* make multi maven module? dist and "node_modules" are not good in eclipse
+* movile css adjustments
