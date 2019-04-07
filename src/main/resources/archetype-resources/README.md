@@ -40,7 +40,7 @@ SetUp Database
 -------------------------
 ```bash
 	sudo apt install -y postgresql postgresql-contrib
-	export DATABASE_URL=postgres://$(whoami)
+	export JDBC_DATABASE_URL=postgres://$(whoami)
 
 	heroku create ${artifactId}
 	heroku addons:create heroku-postgresql
