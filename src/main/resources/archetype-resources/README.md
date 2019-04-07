@@ -25,6 +25,7 @@ npm install -g http-server
 sudo apt install -y snapd 
 export PATH=/snap/bin:$PATH
 sudo snap install --classic heroku
+
 ```
 
 Commit the generated files
@@ -33,6 +34,16 @@ Commit the generated files
 	git init
 	git add -A
 	git commit -m"initial setup via clanneyder"
+```
+
+SetUp Database
+-------------------------
+```bash
+	sudo apt install -y postgresql postgresql-contrib
+	export DATABASE_URL=postgres://$(whoami)
+
+	heroku create ${artifactId}
+	heroku addons:create heroku-postgresql
 ```
 
 Build the project

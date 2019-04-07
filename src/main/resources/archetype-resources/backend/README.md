@@ -25,6 +25,7 @@ create a github repository (without readme)
 	https://github.com/new
 
 push to the new repo
+
 ```bash
 	git init
 	git add -A
@@ -34,6 +35,7 @@ push to the new repo
 ```
 
 create heroku app
+
 ```bash
 	cd backend
 	heroku create ${artifactId}
