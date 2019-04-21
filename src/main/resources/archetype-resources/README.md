@@ -36,14 +36,26 @@ Commit the generated files
 	git commit -m"initial setup via clanneyder"
 ```
 
-SetUp Database
+SetUp remote database
 -------------------------
 ```bash
-	sudo apt install -y postgresql postgresql-contrib
-	export JDBC_DATABASE_URL=postgres://$(whoami)
-
 	heroku create ${artifactId}
 	heroku addons:create heroku-postgresql
+```
+
+SetUp local database
+-------------------------
+```bash
+	
+	sudo apt install -y postgresql postgresql-contrib pgadmin3
+	sudo -u postgres createuser -P -d heroku
+	sudo -u postgres createdb -O heroku heroku
+	
+	sudo xed /etc/postgresql/10/main/postgresql.conf 
+	sudo /etc/init.d/postgresql restart
+	
+	export JDBC_DATABASE_URL=postgres://heroku:password@localhost:5432/heroku
+	
 ```
 
 Build the project
