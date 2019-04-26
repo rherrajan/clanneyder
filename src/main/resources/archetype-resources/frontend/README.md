@@ -36,12 +36,14 @@ view http://localhost:8080
 Deploy the static frontend
 -------------------------
 
-create a new netlify app
-https://app.netlify.com/start
+create a new [github repository](https://github.com/new) and push your code to it
 
-connect to your github repo
+```bash
+	git remote add origin https://github.com/<accountname>/${artifactId}.git
+	git push -u origin master
+```
 
-deploy your site
+create a new [netlify app](https://app.netlify.com/start) connecting to github
 
 open "domain settings"-> "Custom Domains" -> "edit site name"
 change the generated site name to "${artifactId}"
