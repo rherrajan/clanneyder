@@ -48,4 +48,4 @@ create a new [netlify app](https://app.netlify.com/start) connecting to github
 open "domain settings"-> "Custom Domains" -> "edit site name"
 change the generated site name to "${artifactId}"
 
-open https://${artifactId}.netlify.com/
+open https://${artifactId}.netlify.com

@@ -21,18 +21,7 @@ view http://localhost:5000
 Deploy the dynamic backend
 -------------------------
 
-create a github repository (without readme)
-	https://github.com/new
-
-push to the new repo
-
-```bash
-	git init
-	git add -A
-	git commit -m "initial commit"
-	git remote add origin https://github.com/<your user name>/${artifactId}.git
-    git push -u origin master
-```
+deploy the static frontend
 
 create heroku app
 
