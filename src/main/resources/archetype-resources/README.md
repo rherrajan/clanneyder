@@ -48,8 +48,12 @@ SetUp local database
 ```bash
 	
 	sudo apt install -y postgresql postgresql-contrib pgadmin3
+	
+	#sudo -u postgres dropdb herokutestdb
+	#sudo -u postgres dropuser heroku
+
 	sudo -u postgres createuser -P -d heroku
-	sudo -u postgres createdb -O heroku heroku
+	sudo -u postgres createdb -O heroku herokutestdb
 	
 	sudo xed /etc/postgresql/10/main/postgresql.conf 
 	sudo /etc/init.d/postgresql restart
