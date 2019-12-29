@@ -32,4 +32,4 @@ To create your new project run:
 
 Read the README.md in your new project
 --------------------------------------
-Especially the Prerequisites ;)
+Especially the prerequisites ;)

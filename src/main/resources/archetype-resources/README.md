@@ -54,7 +54,7 @@ SetUp local database
 	sudo xed /etc/postgresql/10/main/postgresql.conf 
 	sudo /etc/init.d/postgresql restart
 	
-	export JDBC_DATABASE_URL=postgres://heroku:password@localhost:5432/heroku
+	export JDBC_DATABASE_URL=jdbc:postgres://heroku:password@localhost:5432/heroku
 	# >> ~/.bashrc
 	# >> /etc/environment (to introduce the variable to test in ide for some setups)
 	
